@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Authentication</h1>
+        <form id="authForm">
+            <label for="role"> Enter Role:</label>
+            <select id="role" required>
+                <option value=""></option>
+                <option value="Department Head">Department</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Student Officer">Student Officer</option>
+                <option value="Student">Student</option>
+            </select>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
